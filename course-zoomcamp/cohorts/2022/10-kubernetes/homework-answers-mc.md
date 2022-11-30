@@ -58,8 +58,10 @@ Now you can stop the container running in Docker.
 
 ### Question 1 answer:  0.769
 
+```bash
 :~/mlbookcamp-code/course-zoomcamp/cohorts/2022/05-deployment/homework $ python  q6_test.py 
 {u'get_card': True, u'get_card_probability': 0.7692649226628628}
+```
 
 ## Installing `kubectl` and `kind`
 
@@ -117,9 +119,11 @@ What's the `Type` of the service that is already running there?
 
 
 ### Question 4 answers: ClusterIP
+```bash
 :~/mlbookcamp-code/course-zoomcamp/cohorts/2022/05-deployment/homework $ kubectl get services
 NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
 kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   34s
+```
 
 ## Question 5
 
@@ -176,13 +180,14 @@ Apply this deployment using the appropriate command and get a list of running Po
 You can see one running Pod.
 
 ### Question 6 answers: port is 9696
-
+```bash
 :~/mlbookcamp-code/course-zoomcamp/cohorts/2022/10-kubernetes/code/homework-code $ kubectl get deployment
 NAME          READY   UP-TO-DATE   AVAILABLE   AGE
 credit-card   1/1     1            1           30s
 :~/mlbookcamp-code/course-zoomcamp/cohorts/2022/10-kubernetes/code/homework-code $ kubectl get pod
 NAME                           READY   STATUS    RESTARTS   AGE
 credit-card-7f4b74588d-wzdn7   1/1     Running   0          33s
+```
 
 ## Question 7
 

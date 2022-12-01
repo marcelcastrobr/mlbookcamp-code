@@ -27,8 +27,10 @@ docker-compose up
 
 # ECR 
 ## Authenticate to your default register
+```bash 
 sudo apt install gnupg2 pass # for ubuntu on ec2
 aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 656001362760.dkr.ecr.eu-west-1.amazonaws.com
+```
 
 ## Sending my image to ECR
 aws ecr create-repository --repository-name zoomcamp-10-model-xception-v4-001
